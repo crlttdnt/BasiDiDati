@@ -38,7 +38,7 @@
                 <tr>
                     <th> Data di nascita: </th>
                     <td> 
-                        <label for="cars"> giorno:</label>
+                        <label for="giorno"> giorno:</label>
                         <select name="giorno" id="giorno" >
                             <option value="1">1</option>
                             <option value="2">2</option>
