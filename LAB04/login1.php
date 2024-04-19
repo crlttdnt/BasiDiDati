@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +55,7 @@
 
             #Interrogazione del DB
             $query = "SELECT * FROM utente WHERE username=$1 AND pwd=$2";
-            $result = pg_query_params($conn, $query, array($user, $pwd)); 
+            $result = pg_query_params($conn, $query, array($user, $password)); 
             $found = pg_fetch_array($result, NULL, PGSQL_ASSOC);
             //tutto questo sopra interroga il DB e in più mi controlla che dentro la query non ci sia sql -> potrebbe cancellare tutto ! 
 
