@@ -24,6 +24,7 @@
         include 'vars.php';
 
         $user = $_POST["username"];
+        $password = $_POST["password"];
 
         if (areCredentialsCorrect($user, $password)) {
 
